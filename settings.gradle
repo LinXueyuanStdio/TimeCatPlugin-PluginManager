@@ -1,0 +1,15 @@
+rootProject.name = "TimeCatPluginTemplate"
+
+apply from: "context.gradle"
+
+include ':app'
+include ':database'
+include ':plugin-manager'
+include ':plugin-main'
+include ':plugin-loader'
+include ':plugin-runtime'
+include ':plugin-normal-app'
+include ':plugin-shadow-app'
+
+include ':slidingmenu'
+include ':pinnedheaderexpandablelistview'

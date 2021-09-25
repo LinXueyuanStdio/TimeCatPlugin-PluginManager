@@ -1,0 +1,11 @@
+apply from: "${project.rootDir}/gradle/library_header.gradle"
+
+dependencies {
+    implementation project(":slidingmenu")
+    implementation project(":pinnedheaderexpandablelistview")
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    //注意sample-host-lib要用compileOnly编译而不打包在插件中。在packagePlugin任务中配置hostWhiteList允许插件访问宿主的类。
+    compileOnly rootProject.ext.timecat["shared-host-jar"]
+}

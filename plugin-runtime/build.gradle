@@ -1,0 +1,5 @@
+apply from: "${gradle.ext.localGradleDir}/plugin/plugin_runtime_header.gradle"
+
+dependencies {
+    implementation "com.tencent.shadow.core:activity-container:$shadow_version"
+}

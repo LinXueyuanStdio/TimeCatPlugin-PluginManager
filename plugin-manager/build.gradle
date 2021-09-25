@@ -1,0 +1,14 @@
+apply from: "${gradle.ext.localGradleDir}/plugin/plugin_manager_header.gradle"
+apply plugin: 'kotlin-android'
+
+dependencies {
+    implementation "com.tencent.shadow.dynamic:manager:$shadow_version"
+    implementation "com.tencent.shadow.core:manager:$shadow_version"
+    implementation "com.tencent.shadow.dynamic:loader:$shadow_version"
+    implementation rootProject.ext.timecat["component-CommonStatic"]
+
+    compileOnly rootProject.ext.timecat["plugin-record-api-jar"]
+
+    compileOnly "com.tencent.shadow.core:common:$shadow_version"
+    compileOnly "com.tencent.shadow.dynamic:host:$shadow_version"
+}

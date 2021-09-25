@@ -1,0 +1,5 @@
+apply from: "${gradle.ext.localGradleDir}/plugin/plugin_header.gradle"
+
+dependencies {
+    implementation project(':plugin-main')
+}

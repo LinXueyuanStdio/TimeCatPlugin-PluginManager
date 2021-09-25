@@ -1,0 +1,5 @@
+apply from: "${project.rootDir}/gradle/library_header.gradle"
+
+dependencies{
+    implementation 'androidx.fragment:fragment:1.3.6'
+}
